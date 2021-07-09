@@ -1,38 +1,190 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: rgb(224, 186, 186);
+  /* border:1px solid red; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-bottom: 20px;
+}
+nav .logo {
+  margin: 0px 10px;
+}
+nav .nav-list ul {
+  list-style-type: none;
+}
+nav .nav-list ul li {
+  display: inline-block;
+}
+nav .nav-list ul li a {
+  text-decoration: none;
+  color: rgb(34, 33, 33);
+  font-weight: bold;
+  /* border:2px solid green; */
+  padding: 2px 20px;
+  margin: 0px 2px;
+  line-height: 25px;
+}
+nav .nav-list ul li a:hover {
+  color: rgb(243, 243, 243);
+  transition: 0.4s;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.heading {
   text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: rgb(4, 18, 37)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* LOGIN AND SIGNUP */
+
+section .login-form {
+  border: 2px solid rgb(221, 217, 217);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.login-form input {
+  padding: 10px 30px;
+  width: 100%;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* HOME PAGE */
+
+section.Home {
+  /* border: 2px solid black; */
+  margin: 10px 20px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper .search, .gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.search input{
+  padding: 10px 30px;
+  width: 600px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.search button{
+  width: 100px;
+  padding: 7px 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 10px;
+  background-color: rgb(4, 18, 37);
+  color:white;
+}
+.wrapper .gallery{
+  /* border: 1px solid red; */
+  height:100%;
+}
+
+.gallery .grand_parent {
+  /* width: 100vw; */
+  height: auto;
+  background: #dfe6e9;
+  color: #fff;
+}
+
+.gallery h1 {
+  font-size: 2rem;
+  padding: 5px 0;
+  text-align: center;
+  color: #000;
+}
+
+.gallery p {
+  text-align: center;
+}
+
+.gallery .parent {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 0.2s linear;
+}
+
+.gallery .child {
+  /* width: 200px; */
+  height: 200px;
+  background: rgb(69, 194, 231);
+  box-shadow: 0 0 20px #bac3c3;
+  flex: 1 1 200px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  position: relative;
+
+}
+
+
+.gallery .child:first-child {
+  background: #ffbe76;
+}
+
+.gallery .child:last-child {
+  background: #ff7979;
+}
+
+@media (max-width: 768px) {
+  .grand_parent {
+      height: auto;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+
+@media (max-width:768px){
+  nav{
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
   }
+  .search input{
+    padding: 10px 30px;
+    width: 200px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: large;
+    transition: .6s;
+  }
+}
+
+img{
+ height: 200px;
 }
