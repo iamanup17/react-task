@@ -42,7 +42,7 @@ const Home = () => {
                         <br />
                         <div className="search-buttons">
 
-                            <button> Beaches </button>
+                            <button> Beachess </button>
                             <button> Mountains </button>
                             <button> Birds </button>
                             <button> Food </button>
@@ -84,6 +84,7 @@ const Home = () => {
                                 </div>
                                 <div class="child">
                                     <img src="../images/popup2.jpg" alt="" />
+                                    
                                 </div>
 
 
