@@ -84,6 +84,7 @@ const Home = () => {
                                 </div>
                                 <div class="child">
                                     <img src="../images/popup2.jpg" alt="" />
+                                    <h1>hello</h1>
                                 </div>
 
 
